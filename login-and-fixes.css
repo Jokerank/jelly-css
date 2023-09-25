@@ -1,0 +1,80 @@
+/*Fixes*/
+.trackSelections .selectContainer .detailTrackSelect {
+    font-size: inherit;
+    overflow: hidden;
+    padding: 6px !important;
+}
+
+/*Login*/
+
+/*Narrow the login form, size according to display size (bigger on mobile)*/
+#loginPage .readOnlyContent,
+#loginPage form {
+  max-width: 22em;
+}
+
+#loginPage .padded-left.padded-right.padded-bottom-page {
+  margin-top: 8em
+}
+
+/*Hide "manual" and "forgot" buttons}*/
+#loginPage .raised.cancel.block.btnForgotPassword.emby-button {
+  display: none
+}
+
+#loginPage .padded-left.padded-right.padded-bottom-page {
+    margin-left: auto;
+    margin-right: auto;
+    background: rgba(0, 0, 0, 0.6);
+    width: 24em;
+    border-radius: var(--rounding);
+}
+#loginPage .squareCard {
+    width: 33%;
+}
+#loginPage form {
+    padding-top: 4em;
+}
+
+#loginPage .sectionTitle{
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-bottom: 1.2em !important;
+}
+
+#loginPage::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/03fdc4bf-72f6-4926-83a7-a76e6a1a5591/9f09b85f-530e-4090-82c3-a60ea2b3177f/US-en-20211115-popsignuptwoweeks-perspective_alpha_website_large.jpg) !important;
+    background-size: cover !important;
+    filter: blur(4px);
+    z-index: -1;
+}
+
+.pageTitleWithDefaultLogo {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg);
+}
+
+.emby-input, .emby-textarea {
+    padding: 0.9em .55em;
+}
+
+.pageTitle {
+    height: 1.5em !important;
+}
+
+/*Fix for low bright fonts*/
+/*
+.checkboxListLabel, .inputLabel, .inputLabelUnfocused, .paperListLabel, .textareaLabelUnfocused {
+    color: rgba(255, 255, 255);
+}
+
+.skinHeader, html {
+    color: rgba(255, 255, 255);
+}
+*/
+/*Login END*/
